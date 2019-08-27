@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:id="@+id/profile"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/profile"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pnum"
+        android:inputType="number"
+        android:hint="Phone No."/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/address"
+        android:layout_below="@id/pnum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Address"
+        android:inputType="text" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/address"
+        android:id="@+id/save"
+        android:layout_centerHorizontal="true"
+        android:text="Save Info."
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logout"
+        android:layout_below="@id/save"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upimg"
+        android:layout_below="@id/logout"
+        android:layout_centerHorizontal="true"
+        android:text="Or Upload image"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

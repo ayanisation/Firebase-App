@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Storage">
+
+    <EditText
+        android:id="@+id/imgname"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="50dp"
+        android:hint="Image Name"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/cimg"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Choose Image"
+        android:layout_below="@id/img"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/imgname"
+        android:layout_margin="50dp" />
+
+    <Button
+        android:id="@+id/uimg"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/img"
+        android:text="Upload image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/cimg"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/uimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Logout"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/showuploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/out"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="See all uploads"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>
